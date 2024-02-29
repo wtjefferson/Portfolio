@@ -1,0 +1,39 @@
+  CCCC   L      OOO   X   X
+ C      L     O   O   X X
+ C      L     O   O    X
+ C      L     O   O   X X
+  CCCC   LLLLL  OOO   X   X
+
+A lexer for the LOX language implemented in C
+	by William Jefferson
+
+//////////////
+// Overview
+/////////////
+
+This Lox interpreter is a lightweight implementation of the Lox programming language, designed for educational purposes. 
+It primarily utilizes an Abstract Syntax Tree (AST) to represent the program's structure and a hashmap for efficient storage and retrieval of variables and functions. 
+The interpreter processes Lox source code in several stages, including lexical analysis, parsing, resolution, and execution.
+
+The core of the interpreter is built around two main structures: the AST and the hashmap. The AST is a hierarchical representation of the source code, with different 
+node types for expressions, statements, and function declarations. The hashmap, used for variable and function storage, enables the interpreter to handle variable scopes 
+and function calls efficiently. The interpreter first tokenizes the source code into a series of tokens, then constructs the AST, resolves variable scopes, 
+and finally walks through the AST to execute the code.
+
+////////////////////
+// Getting Started
+////////////////////
+
+// Prerequisites
+	-GCC compiler
+	-CLOX folder directory
+	
+// Compilation:
+	-Navigate to the parent directory and run the following command:
+		-'gcc -w lox.c -o lox'
+	
+// Running the Program
+	-To run the program in a REPL style, run the following command:
+		-'./lox'
+	-To run the program with an input file, run the following command:
+		-'./lox <filename>'
