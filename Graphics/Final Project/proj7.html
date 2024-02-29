@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>William Jefferson CS435 Project #7</title>
+    <style>
+        /* Add your existing CSS styles here */
+        #webgl-canvas {
+        border: 1px solid black;
+        width: 800px; /* Set desired width */
+        height: 600px; /* Set desired height */
+        }
+        .slider-container {
+            margin-top: 10px;
+        }
+        .slider-label {
+            display: inline-block;
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="webgl-canvas"></canvas>
+
+    <div class="control-panel">
+        <button id="toggle-button">Start</button>
+        <input type="range" id="slider" min="0" max="100" value="0">
+        <span id="slider-value">Spotlight Intensity</span>
+    </div>
+
+    <!-- Top Light Control Sliders -->
+    <div class="slider-container">
+        <h3>Outer Light</h3>
+        <div>
+            <span class="slider-label">R</span>
+            <input type="range" id="top-light-r" min="0" max="255" value="255">
+        </div>
+        <div>
+            <span class="slider-label">G</span>
+            <input type="range" id="top-light-g" min="0" max="255" value="255">
+        </div>
+        <div>
+            <span class="slider-label">B</span>
+            <input type="range" id="top-light-b" min="0" max="255" value="255">
+        </div>
+    </div>
+
+    <!-- Bottom Light Control Sliders -->
+    <div class="slider-container">
+        <h3>Inner Light</h3>
+        <div>
+            <span class="slider-label">R</span>
+            <input type="range" id="bottom-light-r" min="0" max="255" value="255">
+        </div>
+        <div>
+            <span class="slider-label">G</span>
+            <input type="range" id="bottom-light-g" min="0" max="255" value="255">
+        </div>
+        <div>
+            <span class="slider-label">B</span>
+            <input type="range" id="bottom-light-b" min="0" max="255" value="255">
+        </div>
+    </div>
+    <div class="program-instructions">
+        <h2>How to Use This Program</h2>
+        <p>The 'Start' button will begin the animation. The slider to the right
+            of the 'Start' button controls how bright the spotlights are. The sliders
+            below the 'Start' button control the RGB color values of the outer and 
+            inner spotlights respectively.
+        </p>
+    </div>
+
+    <!-- Link to THREE.js library -->
+    <script src="three.js"></script>
+
+    <!-- Link to your JavaScript file -->
+    <script src="proj7.js"></script>
+</body>
+</html>
