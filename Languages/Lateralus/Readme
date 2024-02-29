@@ -1,0 +1,43 @@
+L       A     TTTTT  EEEEE  RRRR    A     L     U   U  SSS 
+L      A A      T    E      R   R  A A    L     U   U  S    
+L     A   A     T    EEEE   RRRR  A   A   L     U   U  SSS 
+L    AAAAAAA    T    E      R  R  AAAAAAA  L    U   U    S
+LLLL A      A   T    EEEEE  R   R A      A LLLLL UUUU  SSS  
+
+A custom data analysis language lexer implemented in C
+					by William Jefferson
+
+//////////////
+// Overview
+/////////////
+
+LATERALUS is a unique programming language designed specifically for data analysis tasks. Its core functionality revolves around 
+the use of maps and simplified loop constructs, making it highly efficient for handling and manipulating data sets. 
+LATERALUS excels in scenarios where data organization, retrieval, and analysis are crucial. It simplifies these processes 
+through its intuitive syntax and data structures, primarily focusing on maps (associative arrays) for storing and accessing data.
+
+LATERALUS introduces a streamlined approach to loops with its spiral construct. These loops are easy to implement and ideal for 
+iterating over data sets. The language also supports custom function definitions (parabol) for encapsulating reusable code, enhancing 
+modularity in data processing scripts. Together, these features allow for writing concise and readable code, crucial for data analysis 
+where complex operations are common.
+
+LATERALUS is tailored for data analysts who require a tool that is both powerful and straightforward. Its design philosophy emphasizes 
+ease of use without compromising on functionality, making it suitable for both simple and complex data analysis tasks. The language's 
+focus on efficient data handling, coupled with its simplicity in looping and function definitions, makes it an ideal choice for 
+processing, analyzing, and visualizing data.
+
+////////////////////
+// Getting Started
+////////////////////
+
+// Prerequisites
+	-GCC compiler
+	-LATERALUS folder directory
+	
+// Compilation:
+	-Navigate to the parent directory and run the following command:
+		-'gcc -w lateralus.c -o lateralus'
+	
+// Running the Program
+	-LATERALUS requires an input file. To begin the program, run the following command:
+		-'./lateralus <filename'

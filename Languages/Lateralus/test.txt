@@ -1,1 +1,38 @@
-yes
+; test.txt
+lat fib;
+
+; Initialize the first two elements of the Fibonacci sequence
+fib.insert("black", 0); ; 0th Fibonacci number
+fib.insert("then", 1); ; 1st Fibonacci number
+
+parabol (lateralus) (
+    spiral (7) (
+        ; Use the currentIteration of the spiral as the iterator
+        int a = 0;
+        int b = 1;
+        if (currentIteration > 1) {
+            a = fib[previousKey]; ; Retrieve the previous Fibonacci number
+            b = fib[currentKey]; ; Retrieve the one before the previous Fibonacci number
+        }
+
+        ; Determine the current key based on the iteration
+        char* currentKey = (currentIteration == 0) ? "black" :
+                           (currentIteration == 1) ? "then" :
+                           (currentIteration == 2) ? "white" :
+                           (currentIteration == 3) ? "are" :
+                           (currentIteration == 4) ? "all" :
+                           (currentIteration == 5) ? "I" :
+                           "see";
+
+        ; Determine the previous key for the next iteration
+        char* previousKey = currentKey;
+
+        ; Insert the new Fibonacci number with the corresponding string key
+        fib.insert(currentKey, a + b);
+    )
+    fib.reflection; ; Print all elements in the map
+)
+
+lateralus();
+
+fib.spiralOut; ; Delete the entire map

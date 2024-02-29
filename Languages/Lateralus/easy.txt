@@ -1,0 +1,11 @@
+; easy.txt
+lat tokens;
+
+; Insert some tokens into the map 'tokens'
+tokens.insert("intToken", 123);
+tokens.insert("floatToken", 45.67);
+tokens.insert("plusToken", "+");
+tokens.insert("minusToken", "-");
+
+; Print the content of the map 'tokens'
+tokens.reflection;
